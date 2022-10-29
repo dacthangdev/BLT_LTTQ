@@ -374,6 +374,7 @@
             this.Controls.Add(this.panelSideMenu);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelMediaMenu.ResumeLayout(false);

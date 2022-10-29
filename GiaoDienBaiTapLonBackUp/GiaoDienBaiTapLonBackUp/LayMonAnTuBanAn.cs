@@ -221,5 +221,11 @@ namespace GiaoDienBaiTapLonBackUp
         {
 
         }
+
+        private void LayMonAnTuBanAn_Load(object sender, EventArgs e)
+        {
+            iconbtnMonKhaiVi_Click(sender, e);
+            buttonSupBap_Click(sender, e);
+        }
     }
 }

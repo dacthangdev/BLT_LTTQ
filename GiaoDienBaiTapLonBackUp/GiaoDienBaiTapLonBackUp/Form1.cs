@@ -44,6 +44,8 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void iconbtnQuanLy_Click(object sender, EventArgs e)
         {
+            hideSubMenu();
+            btnNhanVien_Click(sender, e);
             showSubMenu(panelMediaMenu);
         }
 
@@ -51,25 +53,25 @@ namespace GiaoDienBaiTapLonBackUp
         {
             openchildForm(new NhanVien());
             // code
-            hideSubMenu();
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
             openchildForm(new KhachHang());
             // code
-            hideSubMenu();
+
         }
 
         private void btnDonHang_Click(object sender, EventArgs e)
         {
             openchildForm(new DonHang());
             // code
-            hideSubMenu();
         }
 
         private void iconbtnMenu_Click(object sender, EventArgs e)
         {
+            hideSubMenu();
+            btnKhaiVi_Click(sender, e);
             showSubMenu(panelMenu);
         }
 
@@ -77,21 +79,18 @@ namespace GiaoDienBaiTapLonBackUp
         {
             openchildForm(new MonKhaiVi());
             // code 
-            hideSubMenu();
         }
 
         private void btnMonChinh_Click(object sender, EventArgs e)
         {
             openchildForm(new MonChinh());
             // code
-            hideSubMenu();
         }
 
         private void btnTrangMieng_Click(object sender, EventArgs e)
         {
             openchildForm(new MonTrangMieng());
             // code
-            hideSubMenu();
         }
 
         private Form activeForm = null;
@@ -117,6 +116,7 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void iconbtnHome_Click(object sender, EventArgs e)
         {
+            hideSubMenu();
             openchildForm(new Home());
         }
 
@@ -128,6 +128,11 @@ namespace GiaoDienBaiTapLonBackUp
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

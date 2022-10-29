@@ -65,17 +65,17 @@
             this.buttonSupBap = new System.Windows.Forms.Button();
             this.iconbtnMonKhaiVi = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconbtnClose = new FontAwesome.Sharp.IconButton();
             this.panelHienThiMonAn = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panelDoUong.SuspendLayout();
             this.panelMonTrangMieng.SuspendLayout();
             this.panelMonChinh.SuspendLayout();
             this.panelMonKhaiVi.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelHienThiMonAn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelHienThiMonAn.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -617,6 +617,18 @@
             this.panelLogo.Size = new System.Drawing.Size(179, 91);
             this.panelLogo.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(179, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // iconbtnClose
             // 
             this.iconbtnClose.FlatAppearance.BorderSize = 0;
@@ -641,18 +653,6 @@
             this.panelHienThiMonAn.Size = new System.Drawing.Size(918, 598);
             this.panelHienThiMonAn.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(179, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // LayMonAnTuBanAn
             // 
             this.AllowDrop = true;
@@ -663,14 +663,15 @@
             this.Controls.Add(this.panelSideMenu);
             this.Name = "LayMonAnTuBanAn";
             this.Text = "LayMonAnTuBanAn";
+            this.Load += new System.EventHandler(this.LayMonAnTuBanAn_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelDoUong.ResumeLayout(false);
             this.panelMonTrangMieng.ResumeLayout(false);
             this.panelMonChinh.ResumeLayout(false);
             this.panelMonKhaiVi.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            this.panelHienThiMonAn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelHienThiMonAn.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
