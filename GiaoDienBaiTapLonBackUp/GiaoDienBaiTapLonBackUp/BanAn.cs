@@ -22,7 +22,7 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void grbSoLuongBan_Enter(object sender, EventArgs e)
         {
-
+            ;
         }
         //private Form activeForm = null;
         //private void openchildForm(Form childForm)
