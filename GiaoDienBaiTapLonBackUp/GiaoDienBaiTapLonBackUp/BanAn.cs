@@ -38,6 +38,7 @@ namespace GiaoDienBaiTapLonBackUp
         //    childForm.BringToFront();
         //    childForm.Show();
         //}
+        // adkjqwdhoahdyoqwhdoasdhoqidwh
 
 
         private void btnTang1_Click(object sender, EventArgs e)
