@@ -80,5 +80,10 @@ namespace GiaoDienBaiTapLonBackUp
         {
             openchildForm(new FormMonAn());
         }
+
+        private void MonKhaiVi_Load(object sender, EventArgs e)
+        {
+            buttonSupBap_Click(sender, e);
+        }
     }
 }

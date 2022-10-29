@@ -37,7 +37,7 @@
             this.iconbtnMinus = new FontAwesome.Sharp.IconButton();
             this.iconbtnPlus = new FontAwesome.Sharp.IconButton();
             this.btnMangVe = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbtTable = new System.Windows.Forms.Label();
             this.grbSoLuongBan = new System.Windows.Forms.GroupBox();
             this.btnBan9 = new System.Windows.Forms.Button();
             this.btnBan8 = new System.Windows.Forms.Button();
@@ -142,7 +142,7 @@
             this.panelBanTang.Controls.Add(this.iconbtnMinus);
             this.panelBanTang.Controls.Add(this.iconbtnPlus);
             this.panelBanTang.Controls.Add(this.btnMangVe);
-            this.panelBanTang.Controls.Add(this.label2);
+            this.panelBanTang.Controls.Add(this.lbtTable);
             this.panelBanTang.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBanTang.Location = new System.Drawing.Point(0, 0);
             this.panelBanTang.Name = "panelBanTang";
@@ -185,15 +185,15 @@
             this.btnMangVe.Text = "Mang về";
             this.btnMangVe.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lbtTable
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(6, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Bàn 1 - Tầng 1";
+            this.lbtTable.AutoSize = true;
+            this.lbtTable.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lbtTable.Location = new System.Drawing.Point(6, 15);
+            this.lbtTable.Name = "lbtTable";
+            this.lbtTable.Size = new System.Drawing.Size(93, 16);
+            this.lbtTable.TabIndex = 0;
+            this.lbtTable.Text = "Bàn 1 - Tầng 1";
             // 
             // grbSoLuongBan
             // 
@@ -448,7 +448,7 @@
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton iconbtnMinus;
         private FontAwesome.Sharp.IconButton iconbtnPlus;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbtTable;
         private System.Windows.Forms.GroupBox grbSoLuongBan;
         private System.Windows.Forms.Button btnBan9;
         private System.Windows.Forms.Button btnBan8;

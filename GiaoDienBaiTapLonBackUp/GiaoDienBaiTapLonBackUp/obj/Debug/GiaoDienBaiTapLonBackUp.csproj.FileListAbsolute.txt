@@ -27,8 +27,6 @@ D:\kì 5\lập trình trực quan\Bài Tập Lớn\GiaoDienBaiTapLonBackUp\GiaoD
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\GiaoDienBaiTapLonBackUp.exe.config
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\GiaoDienBaiTapLonBackUp.exe
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\GiaoDienBaiTapLonBackUp.pdb
-D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\FontAwesome.Sharp.dll
-D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\FontAwesome.Sharp.Pro.dll
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.AssemblyReference.cache
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.SuggestedBindingRedirects.cache
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.BanAn.resources

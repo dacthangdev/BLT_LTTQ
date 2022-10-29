@@ -209,6 +209,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MonKhaiVi";
             this.Text = "MonKhaiVi";
+            this.Load += new System.EventHandler(this.MonKhaiVi_Load);
             this.panelMonKhaiVi.ResumeLayout(false);
             this.ResumeLayout(false);
 
