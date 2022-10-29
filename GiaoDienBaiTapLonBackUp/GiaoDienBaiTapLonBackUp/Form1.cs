@@ -12,7 +12,6 @@ namespace GiaoDienBaiTapLonBackUp
 {
     public partial class Form1 : Form
     {
-        string a;
         public Form1()
         {
             InitializeComponent();
@@ -64,7 +63,6 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void btnDonHang_Click(object sender, EventArgs e)
         {
-            a = btnDonHang.Text;
             openchildForm(new DonHang());
             // code
             hideSubMenu();
