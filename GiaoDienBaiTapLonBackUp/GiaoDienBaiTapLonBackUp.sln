@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiaoDienBaiTapLonBackUp", "GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp.csproj", "{6E1DB79C-AAC7-42BB-A83F-0E61FF27CAB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E1DB79C-AAC7-42BB-A83F-0E61FF27CAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1DB79C-AAC7-42BB-A83F-0E61FF27CAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1DB79C-AAC7-42BB-A83F-0E61FF27CAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1DB79C-AAC7-42BB-A83F-0E61FF27CAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18D6D0EC-F835-49C6-AB88-49B86A85EF05}
+	EndGlobalSection
+EndGlobal
