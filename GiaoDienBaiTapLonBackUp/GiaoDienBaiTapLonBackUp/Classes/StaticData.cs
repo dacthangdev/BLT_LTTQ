@@ -9,5 +9,6 @@ namespace GiaoDienBaiTapLonBackUp.Classes
     internal class StaticData
     {
         public static string tenmon;
+        public static bool is_menu_click=false;
     }
 }

@@ -68,6 +68,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconbtnClose = new FontAwesome.Sharp.IconButton();
             this.panelHienThiMonAn = new System.Windows.Forms.Panel();
+            this.panelOder = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.iconbtnThanhToan = new FontAwesome.Sharp.IconButton();
+            this.iconbtnChiTiet = new FontAwesome.Sharp.IconButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panelBanTang = new System.Windows.Forms.Panel();
+            this.lbtTable = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelDoUong.SuspendLayout();
             this.panelMonTrangMieng.SuspendLayout();
@@ -76,6 +83,9 @@
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHienThiMonAn.SuspendLayout();
+            this.panelOder.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panelBanTang.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -646,12 +656,109 @@
             // 
             // panelHienThiMonAn
             // 
+            this.panelHienThiMonAn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelHienThiMonAn.Controls.Add(this.iconbtnClose);
-            this.panelHienThiMonAn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHienThiMonAn.Location = new System.Drawing.Point(200, 0);
             this.panelHienThiMonAn.Name = "panelHienThiMonAn";
-            this.panelHienThiMonAn.Size = new System.Drawing.Size(918, 598);
+            this.panelHienThiMonAn.Size = new System.Drawing.Size(515, 598);
             this.panelHienThiMonAn.TabIndex = 1;
+            // 
+            // panelOder
+            // 
+            this.panelOder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelOder.Controls.Add(this.panel3);
+            this.panelOder.Controls.Add(this.panelBanTang);
+            this.panelOder.Location = new System.Drawing.Point(721, 0);
+            this.panelOder.Name = "panelOder";
+            this.panelOder.Size = new System.Drawing.Size(397, 607);
+            this.panelOder.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(126)))), ((int)(((byte)(63)))));
+            this.panel3.Controls.Add(this.iconbtnThanhToan);
+            this.panel3.Controls.Add(this.iconbtnChiTiet);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 542);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(397, 65);
+            this.panel3.TabIndex = 4;
+            // 
+            // iconbtnThanhToan
+            // 
+            this.iconbtnThanhToan.BackColor = System.Drawing.Color.Goldenrod;
+            this.iconbtnThanhToan.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconbtnThanhToan.FlatAppearance.BorderSize = 0;
+            this.iconbtnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconbtnThanhToan.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconbtnThanhToan.IconChar = FontAwesome.Sharp.IconChar.MoneyBill1Wave;
+            this.iconbtnThanhToan.IconColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconbtnThanhToan.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconbtnThanhToan.IconSize = 20;
+            this.iconbtnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconbtnThanhToan.Location = new System.Drawing.Point(242, 0);
+            this.iconbtnThanhToan.Name = "iconbtnThanhToan";
+            this.iconbtnThanhToan.Size = new System.Drawing.Size(90, 65);
+            this.iconbtnThanhToan.TabIndex = 2;
+            this.iconbtnThanhToan.Text = "Thanh toán";
+            this.iconbtnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconbtnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconbtnThanhToan.UseVisualStyleBackColor = false;
+            // 
+            // iconbtnChiTiet
+            // 
+            this.iconbtnChiTiet.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.iconbtnChiTiet.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconbtnChiTiet.FlatAppearance.BorderSize = 0;
+            this.iconbtnChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconbtnChiTiet.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            this.iconbtnChiTiet.IconColor = System.Drawing.Color.Black;
+            this.iconbtnChiTiet.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconbtnChiTiet.IconSize = 16;
+            this.iconbtnChiTiet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconbtnChiTiet.Location = new System.Drawing.Point(332, 0);
+            this.iconbtnChiTiet.Name = "iconbtnChiTiet";
+            this.iconbtnChiTiet.Size = new System.Drawing.Size(65, 65);
+            this.iconbtnChiTiet.TabIndex = 1;
+            this.iconbtnChiTiet.Text = "Chi tiết";
+            this.iconbtnChiTiet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconbtnChiTiet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconbtnChiTiet.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(-5, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Thành tiền:";
+            // 
+            // panelBanTang
+            // 
+            this.panelBanTang.Controls.Add(this.lbtTable);
+            this.panelBanTang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBanTang.Location = new System.Drawing.Point(0, 0);
+            this.panelBanTang.Name = "panelBanTang";
+            this.panelBanTang.Size = new System.Drawing.Size(397, 52);
+            this.panelBanTang.TabIndex = 3;
+            // 
+            // lbtTable
+            // 
+            this.lbtTable.AutoSize = true;
+            this.lbtTable.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lbtTable.Location = new System.Drawing.Point(6, 15);
+            this.lbtTable.Name = "lbtTable";
+            this.lbtTable.Size = new System.Drawing.Size(93, 16);
+            this.lbtTable.TabIndex = 0;
+            this.lbtTable.Text = "Bàn 1 - Tầng 1";
             // 
             // LayMonAnTuBanAn
             // 
@@ -659,6 +766,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1118, 598);
+            this.Controls.Add(this.panelOder);
             this.Controls.Add(this.panelHienThiMonAn);
             this.Controls.Add(this.panelSideMenu);
             this.Name = "LayMonAnTuBanAn";
@@ -672,6 +780,11 @@
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelHienThiMonAn.ResumeLayout(false);
+            this.panelOder.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panelBanTang.ResumeLayout(false);
+            this.panelBanTang.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -717,5 +830,12 @@
         private FontAwesome.Sharp.IconButton iconbtnClose;
         private System.Windows.Forms.Panel panelHienThiMonAn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelOder;
+        private System.Windows.Forms.Panel panel3;
+        private FontAwesome.Sharp.IconButton iconbtnThanhToan;
+        private FontAwesome.Sharp.IconButton iconbtnChiTiet;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panelBanTang;
+        private System.Windows.Forms.Label lbtTable;
     }
 }
