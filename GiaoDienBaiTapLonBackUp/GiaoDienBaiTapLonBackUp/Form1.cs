@@ -20,14 +20,12 @@ namespace GiaoDienBaiTapLonBackUp
         private void customsizeDesing()
         {
             panelMediaMenu.Visible = false;
-            panelMenu.Visible = false;
+     
         }
         private void hideSubMenu()
         {
             if (panelMediaMenu.Visible == true)
-                panelMediaMenu.Visible = false;
-            if (panelMenu.Visible == true)
-                panelMenu.Visible = false;
+                panelMediaMenu.Visible = false;;
         }
         private void showSubMenu(Panel subMenu)
         {
@@ -70,28 +68,9 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void iconbtnMenu_Click(object sender, EventArgs e)
         {
-            hideSubMenu();
-            btnKhaiVi_Click(sender, e);
-            showSubMenu(panelMenu);
+            openchildForm(new LayMonAnTuBanAn());
         }
 
-        private void btnKhaiVi_Click(object sender, EventArgs e)
-        {
-            openchildForm(new MonKhaiVi());
-            // code 
-        }
-
-        private void btnMonChinh_Click(object sender, EventArgs e)
-        {
-            openchildForm(new MonChinh());
-            // code
-        }
-
-        private void btnTrangMieng_Click(object sender, EventArgs e)
-        {
-            openchildForm(new MonTrangMieng());
-            // code
-        }
 
         private Form activeForm = null;
         private void openchildForm(Form childForm)
