@@ -34,9 +34,6 @@
             this.iconbtnChiTiet = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.panelBanTang = new System.Windows.Forms.Panel();
-            this.iconbtnMinus = new FontAwesome.Sharp.IconButton();
-            this.iconbtnPlus = new FontAwesome.Sharp.IconButton();
-            this.btnMangVe = new System.Windows.Forms.Button();
             this.lbtTable = new System.Windows.Forms.Label();
             this.grbSoLuongBan = new System.Windows.Forms.GroupBox();
             this.btnBan9 = new System.Windows.Forms.Button();
@@ -55,15 +52,18 @@
             this.btnTang3 = new System.Windows.Forms.Button();
             this.btnTang2 = new System.Windows.Forms.Button();
             this.btnTang1 = new System.Windows.Forms.Button();
+            this.dtgChiTietHoaDon = new System.Windows.Forms.DataGridView();
             this.panelOder.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelBanTang.SuspendLayout();
             this.grbSoLuongBan.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgChiTietHoaDon)).BeginInit();
             this.SuspendLayout();
             // 
             // panelOder
             // 
+            this.panelOder.Controls.Add(this.dtgChiTietHoaDon);
             this.panelOder.Controls.Add(this.panel3);
             this.panelOder.Controls.Add(this.panelBanTang);
             this.panelOder.Dock = System.Windows.Forms.DockStyle.Left;
@@ -139,51 +139,12 @@
             // 
             // panelBanTang
             // 
-            this.panelBanTang.Controls.Add(this.iconbtnMinus);
-            this.panelBanTang.Controls.Add(this.iconbtnPlus);
-            this.panelBanTang.Controls.Add(this.btnMangVe);
             this.panelBanTang.Controls.Add(this.lbtTable);
             this.panelBanTang.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBanTang.Location = new System.Drawing.Point(0, 0);
             this.panelBanTang.Name = "panelBanTang";
             this.panelBanTang.Size = new System.Drawing.Size(415, 52);
             this.panelBanTang.TabIndex = 3;
-            // 
-            // iconbtnMinus
-            // 
-            this.iconbtnMinus.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.iconbtnMinus.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.iconbtnMinus.IconColor = System.Drawing.Color.Black;
-            this.iconbtnMinus.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconbtnMinus.IconSize = 16;
-            this.iconbtnMinus.Location = new System.Drawing.Point(276, 13);
-            this.iconbtnMinus.Name = "iconbtnMinus";
-            this.iconbtnMinus.Size = new System.Drawing.Size(30, 30);
-            this.iconbtnMinus.TabIndex = 6;
-            this.iconbtnMinus.UseVisualStyleBackColor = true;
-            // 
-            // iconbtnPlus
-            // 
-            this.iconbtnPlus.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.iconbtnPlus.IconColor = System.Drawing.Color.Black;
-            this.iconbtnPlus.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconbtnPlus.IconSize = 16;
-            this.iconbtnPlus.Location = new System.Drawing.Point(228, 13);
-            this.iconbtnPlus.Name = "iconbtnPlus";
-            this.iconbtnPlus.Size = new System.Drawing.Size(30, 30);
-            this.iconbtnPlus.TabIndex = 5;
-            this.iconbtnPlus.Text = "\r\n";
-            this.iconbtnPlus.UseVisualStyleBackColor = true;
-            // 
-            // btnMangVe
-            // 
-            this.btnMangVe.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnMangVe.Location = new System.Drawing.Point(323, 13);
-            this.btnMangVe.Name = "btnMangVe";
-            this.btnMangVe.Size = new System.Drawing.Size(70, 29);
-            this.btnMangVe.TabIndex = 4;
-            this.btnMangVe.Text = "Mang về";
-            this.btnMangVe.UseVisualStyleBackColor = true;
             // 
             // lbtTable
             // 
@@ -419,6 +380,17 @@
             this.btnTang1.UseVisualStyleBackColor = true;
             this.btnTang1.Click += new System.EventHandler(this.btnTang1_Click);
             // 
+            // dtgChiTietHoaDon
+            // 
+            this.dtgChiTietHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgChiTietHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgChiTietHoaDon.Location = new System.Drawing.Point(0, 52);
+            this.dtgChiTietHoaDon.Name = "dtgChiTietHoaDon";
+            this.dtgChiTietHoaDon.RowHeadersWidth = 51;
+            this.dtgChiTietHoaDon.RowTemplate.Height = 24;
+            this.dtgChiTietHoaDon.Size = new System.Drawing.Size(415, 429);
+            this.dtgChiTietHoaDon.TabIndex = 5;
+            // 
             // BanAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -429,6 +401,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BanAn";
             this.Text = "BanAn";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelOder.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -436,6 +409,7 @@
             this.panelBanTang.PerformLayout();
             this.grbSoLuongBan.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgChiTietHoaDon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -444,13 +418,10 @@
 
         private System.Windows.Forms.Panel panelOder;
         private System.Windows.Forms.Panel panelBanTang;
-        private System.Windows.Forms.Button btnMangVe;
         private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton iconbtnThanhToan;
         private FontAwesome.Sharp.IconButton iconbtnChiTiet;
         private System.Windows.Forms.Label label3;
-        private FontAwesome.Sharp.IconButton iconbtnMinus;
-        private FontAwesome.Sharp.IconButton iconbtnPlus;
         private System.Windows.Forms.Label lbtTable;
         private System.Windows.Forms.GroupBox grbSoLuongBan;
         private System.Windows.Forms.Button btnBan9;
@@ -469,5 +440,6 @@
         private System.Windows.Forms.Button btnTang3;
         private System.Windows.Forms.Button btnTang2;
         private System.Windows.Forms.Button btnTang1;
+        private System.Windows.Forms.DataGridView dtgChiTietHoaDon;
     }
 }

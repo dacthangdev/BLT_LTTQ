@@ -254,6 +254,12 @@ namespace GiaoDienBaiTapLonBackUp
                 lbtTable.Visible = false;
                 pictureBox1.Visible = false;
             }
+            else
+            {
+                lbtTable.Visible = true;
+                pictureBox1.Visible = true;
+                lbtTable.Text = Classes.StaticData.lblTable;
+            }
             iconbtnMonKhaiVi_Click(sender, e);
             buttonSupBap_Click(sender, e);
         }
