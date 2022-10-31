@@ -80,7 +80,6 @@ namespace GiaoDienBaiTapLonBackUp
             else if (is_tang_2_click) lbtTable.Text = "Bàn " + btnBan1.Text + " - " + btnTang2.Text;
             else if (is_tang_3_click) lbtTable.Text = "Bàn " + btnBan1.Text + " - " + btnTang3.Text;
             else lbtTable.Text = "Bạn chưa chọn bàn!";
-            grbSoLuongBan.Visible = false;
             LayMonAnTuBanAn lb = new LayMonAnTuBanAn();
             lb.ShowDialog();
         }

@@ -256,7 +256,7 @@
             this.btnBan1.Name = "btnBan1";
             this.btnBan1.Size = new System.Drawing.Size(139, 141);
             this.btnBan1.TabIndex = 16;
-            this.btnBan1.Text = "1\r\n";
+            this.btnBan1.Text = "1";
             this.btnBan1.UseVisualStyleBackColor = false;
             this.btnBan1.Click += new System.EventHandler(this.btnBan1_Click);
             // 
@@ -393,6 +393,7 @@
             this.btnTang3.TabIndex = 3;
             this.btnTang3.Text = "Tầng 3";
             this.btnTang3.UseVisualStyleBackColor = true;
+            this.btnTang3.Click += new System.EventHandler(this.btnTang3_Click);
             // 
             // btnTang2
             // 
@@ -404,6 +405,7 @@
             this.btnTang2.TabIndex = 2;
             this.btnTang2.Text = "Tầng 2";
             this.btnTang2.UseVisualStyleBackColor = true;
+            this.btnTang2.Click += new System.EventHandler(this.btnTang2_Click);
             // 
             // btnTang1
             // 
@@ -415,6 +417,7 @@
             this.btnTang1.TabIndex = 1;
             this.btnTang1.Text = "Tầng 1";
             this.btnTang1.UseVisualStyleBackColor = true;
+            this.btnTang1.Click += new System.EventHandler(this.btnTang1_Click);
             // 
             // BanAn
             // 

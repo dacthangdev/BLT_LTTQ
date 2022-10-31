@@ -36,14 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnTrangTiep = new System.Windows.Forms.Button();
-            this.btnTrangCuoi = new System.Windows.Forms.Button();
-            this.btnTrangDau = new System.Windows.Forms.Button();
-            this.btnTrangTruoc = new System.Windows.Forms.Button();
             this.panelTimKiemKH.SuspendLayout();
             this.panelTrangThai.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -123,14 +117,8 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.btnTrangTiep);
-            this.panel1.Controls.Add(this.btnTrangCuoi);
-            this.panel1.Controls.Add(this.btnTrangDau);
-            this.panel1.Controls.Add(this.btnTrangTruoc);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 398);
             this.panel1.Name = "panel1";
@@ -147,26 +135,6 @@
             this.label6.Size = new System.Drawing.Size(106, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "Tổng số đơn:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(527, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(43, 24);
-            this.comboBox1.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(358, 17);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 16);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Số dòng trên 1 trang:";
             // 
             // label4
             // 
@@ -191,46 +159,6 @@
             this.label3.Size = new System.Drawing.Size(14, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "/";
-            // 
-            // btnTrangTiep
-            // 
-            this.btnTrangTiep.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangTiep.Location = new System.Drawing.Point(665, 13);
-            this.btnTrangTiep.Name = "btnTrangTiep";
-            this.btnTrangTiep.Size = new System.Drawing.Size(30, 30);
-            this.btnTrangTiep.TabIndex = 3;
-            this.btnTrangTiep.Text = ">";
-            this.btnTrangTiep.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangCuoi
-            // 
-            this.btnTrangCuoi.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangCuoi.Location = new System.Drawing.Point(699, 13);
-            this.btnTrangCuoi.Name = "btnTrangCuoi";
-            this.btnTrangCuoi.Size = new System.Drawing.Size(40, 30);
-            this.btnTrangCuoi.TabIndex = 2;
-            this.btnTrangCuoi.Text = ">|";
-            this.btnTrangCuoi.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangDau
-            // 
-            this.btnTrangDau.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangDau.Location = new System.Drawing.Point(586, 13);
-            this.btnTrangDau.Name = "btnTrangDau";
-            this.btnTrangDau.Size = new System.Drawing.Size(40, 30);
-            this.btnTrangDau.TabIndex = 1;
-            this.btnTrangDau.Text = "|<";
-            this.btnTrangDau.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangTruoc
-            // 
-            this.btnTrangTruoc.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangTruoc.Location = new System.Drawing.Point(629, 13);
-            this.btnTrangTruoc.Name = "btnTrangTruoc";
-            this.btnTrangTruoc.Size = new System.Drawing.Size(30, 30);
-            this.btnTrangTruoc.TabIndex = 0;
-            this.btnTrangTruoc.Text = "<";
-            this.btnTrangTruoc.UseVisualStyleBackColor = true;
             // 
             // DonHang
             // 
@@ -263,13 +191,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnTrangTiep;
-        private System.Windows.Forms.Button btnTrangCuoi;
-        private System.Windows.Forms.Button btnTrangDau;
-        private System.Windows.Forms.Button btnTrangTruoc;
     }
 }
