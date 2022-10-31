@@ -37,11 +37,7 @@ D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.KhachHang.resources
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.LayMonAnTuBanAn.resources
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Login.resources
-D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.MonChinh.resources
-D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.MonKhaiVi.resources
-D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.MonTrangMieng.resources
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.NhanVien.resources
-D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.NuocUong.resources
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Properties.Resources.resources
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.GenerateResource.cache
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.CoreCompileInputs.cache

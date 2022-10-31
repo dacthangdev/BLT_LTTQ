@@ -68,6 +68,7 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void iconbtnMenu_Click(object sender, EventArgs e)
         {
+            Classes.StaticData.is_menu_click = true;
             openchildForm(new LayMonAnTuBanAn());
         }
 
@@ -98,11 +99,6 @@ namespace GiaoDienBaiTapLonBackUp
             openchildForm(new Home());
         }
 
-        private void btnNuoc_Click(object sender, EventArgs e)
-        {
-            openchildForm(new NuocUong());
-            // code
-        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
