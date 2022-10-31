@@ -39,5 +39,10 @@ namespace GiaoDienBaiTapLonBackUp
                 txtTimKiemNV.ForeColor = SystemColors.WindowText;
             }
         }
+
+        private void btnThemNV_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

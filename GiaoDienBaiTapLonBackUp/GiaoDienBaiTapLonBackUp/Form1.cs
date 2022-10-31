@@ -110,7 +110,6 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void iconbtnBanAn_Click(object sender, EventArgs e)
         {
-            
             openchildForm(new BanAn());
         }
 
@@ -124,7 +123,6 @@ namespace GiaoDienBaiTapLonBackUp
         {
             openchildForm(new NuocUong());
             // code
-            hideSubMenu();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

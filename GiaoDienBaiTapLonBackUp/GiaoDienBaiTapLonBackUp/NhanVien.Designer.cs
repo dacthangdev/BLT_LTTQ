@@ -33,10 +33,6 @@
             this.txtTimKiemNV = new System.Windows.Forms.TextBox();
             this.panelNhanVien = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnTrangTiep = new System.Windows.Forms.Button();
-            this.btnTrangCuoi = new System.Windows.Forms.Button();
-            this.btnTrangDau = new System.Windows.Forms.Button();
-            this.btnTrangTruoc = new System.Windows.Forms.Button();
             this.panelTrangThai = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,7 +42,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelTimKiemNV.SuspendLayout();
             this.panelNhanVien.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panelTrangThai.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +68,7 @@
             this.btnThemNV.TabIndex = 1;
             this.btnThemNV.Text = "Thêm nhân viên";
             this.btnThemNV.UseVisualStyleBackColor = false;
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // txtTimKiemNV
             // 
@@ -98,55 +94,11 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnTrangTiep);
-            this.panel1.Controls.Add(this.btnTrangCuoi);
-            this.panel1.Controls.Add(this.btnTrangDau);
-            this.panel1.Controls.Add(this.btnTrangTruoc);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 325);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(754, 57);
             this.panel1.TabIndex = 3;
-            // 
-            // btnTrangTiep
-            // 
-            this.btnTrangTiep.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangTiep.Location = new System.Drawing.Point(665, 13);
-            this.btnTrangTiep.Name = "btnTrangTiep";
-            this.btnTrangTiep.Size = new System.Drawing.Size(30, 30);
-            this.btnTrangTiep.TabIndex = 3;
-            this.btnTrangTiep.Text = ">";
-            this.btnTrangTiep.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangCuoi
-            // 
-            this.btnTrangCuoi.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangCuoi.Location = new System.Drawing.Point(699, 13);
-            this.btnTrangCuoi.Name = "btnTrangCuoi";
-            this.btnTrangCuoi.Size = new System.Drawing.Size(40, 30);
-            this.btnTrangCuoi.TabIndex = 2;
-            this.btnTrangCuoi.Text = ">|";
-            this.btnTrangCuoi.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangDau
-            // 
-            this.btnTrangDau.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangDau.Location = new System.Drawing.Point(586, 13);
-            this.btnTrangDau.Name = "btnTrangDau";
-            this.btnTrangDau.Size = new System.Drawing.Size(40, 30);
-            this.btnTrangDau.TabIndex = 1;
-            this.btnTrangDau.Text = "|<";
-            this.btnTrangDau.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangTruoc
-            // 
-            this.btnTrangTruoc.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangTruoc.Location = new System.Drawing.Point(629, 13);
-            this.btnTrangTruoc.Name = "btnTrangTruoc";
-            this.btnTrangTruoc.Size = new System.Drawing.Size(30, 30);
-            this.btnTrangTruoc.TabIndex = 0;
-            this.btnTrangTruoc.Text = "<";
-            this.btnTrangTruoc.UseVisualStyleBackColor = true;
             // 
             // panelTrangThai
             // 
@@ -242,7 +194,6 @@
             this.panelTimKiemNV.ResumeLayout(false);
             this.panelTimKiemNV.PerformLayout();
             this.panelNhanVien.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panelTrangThai.ResumeLayout(false);
             this.panelTrangThai.PerformLayout();
             this.ResumeLayout(false);
@@ -263,9 +214,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnTrangTiep;
-        private System.Windows.Forms.Button btnTrangCuoi;
-        private System.Windows.Forms.Button btnTrangDau;
-        private System.Windows.Forms.Button btnTrangTruoc;
     }
 }
