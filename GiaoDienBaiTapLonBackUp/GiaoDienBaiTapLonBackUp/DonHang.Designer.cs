@@ -32,15 +32,16 @@
             this.btnBanHang = new System.Windows.Forms.Button();
             this.txtTimKiemDH = new System.Windows.Forms.TextBox();
             this.panelTrangThai = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.dgvHoaDon = new System.Windows.Forms.DataGridView();
             this.panelTimKiemKH.SuspendLayout();
             this.panelTrangThai.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTimKiemKH
@@ -82,7 +83,6 @@
             // panelTrangThai
             // 
             this.panelTrangThai.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelTrangThai.Controls.Add(this.label2);
             this.panelTrangThai.Controls.Add(this.label1);
             this.panelTrangThai.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTrangThai.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,16 +90,6 @@
             this.panelTrangThai.Name = "panelTrangThai";
             this.panelTrangThai.Size = new System.Drawing.Size(754, 54);
             this.panelTrangThai.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(137, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "(30 ngày gần nhất)";
             // 
             // label1
             // 
@@ -160,23 +150,38 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "/";
             // 
+            // dgvHoaDon
+            // 
+            this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvHoaDon.Location = new System.Drawing.Point(0, 127);
+            this.dgvHoaDon.Name = "dgvHoaDon";
+            this.dgvHoaDon.RowHeadersWidth = 51;
+            this.dgvHoaDon.RowTemplate.Height = 24;
+            this.dgvHoaDon.Size = new System.Drawing.Size(754, 271);
+            this.dgvHoaDon.TabIndex = 6;
+            // 
             // DonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(754, 455);
+            this.Controls.Add(this.dgvHoaDon);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTrangThai);
             this.Controls.Add(this.panelTimKiemKH);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DonHang";
             this.Text = "DonHang";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.DonHang_Load);
             this.panelTimKiemKH.ResumeLayout(false);
             this.panelTimKiemKH.PerformLayout();
             this.panelTrangThai.ResumeLayout(false);
             this.panelTrangThai.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -187,11 +192,11 @@
         private System.Windows.Forms.Button btnBanHang;
         private System.Windows.Forms.TextBox txtTimKiemDH;
         private System.Windows.Forms.Panel panelTrangThai;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dgvHoaDon;
     }
 }

@@ -68,6 +68,7 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void iconbtnMenu_Click(object sender, EventArgs e)
         {
+            hideSubMenu();
             Classes.StaticData.is_menu_click = true;
             openchildForm(new LayMonAnTuBanAn());
         }
@@ -90,6 +91,8 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void iconbtnBanAn_Click(object sender, EventArgs e)
         {
+            hideSubMenu();
+            Classes.StaticData.is_menu_click = false;
             openchildForm(new BanAn());
         }
 

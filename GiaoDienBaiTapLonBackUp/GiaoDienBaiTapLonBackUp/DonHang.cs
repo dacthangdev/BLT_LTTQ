@@ -12,6 +12,7 @@ namespace GiaoDienBaiTapLonBackUp
 {
     public partial class DonHang : Form
     {
+        Classes.ConnectData dta = new Classes.ConnectData();
         public DonHang()
         {
             InitializeComponent();
@@ -42,6 +43,11 @@ namespace GiaoDienBaiTapLonBackUp
         private void btnBanHang_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void DonHang_Load(object sender, EventArgs e)
+        {
+            dgvHoaDon.DataSource = dta.ReadData("Select * from thoadon");
         }
     }
 }

@@ -10,5 +10,6 @@ namespace GiaoDienBaiTapLonBackUp.Classes
     {
         public static string tenmon;
         public static bool is_menu_click=false;
+        public static string lblTable;
     }
 }

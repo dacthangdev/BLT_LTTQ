@@ -10,7 +10,7 @@ namespace GiaoDienBaiTapLonBackUp.Classes
 {
     internal class ConnectData
     {
-        static string strConnect = "Data Source=DARKMOON\\DACTHANG;Initial Catalog=LTTQ;Integrated Security=True";
+        static string strConnect = "Data Source=DARKMOON\\DACTHANG;Initial Catalog=QLnhahang;Integrated Security=True";
         public SqlConnection sqlConn = null;
         // opening connect method
         public void OpenConnect()

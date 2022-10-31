@@ -12,6 +12,7 @@ namespace GiaoDienBaiTapLonBackUp
 {
     public partial class NhanVien : Form
     {
+        Classes.ConnectData dta = new Classes.ConnectData();
         public NhanVien()
         {
             InitializeComponent();
@@ -43,6 +44,11 @@ namespace GiaoDienBaiTapLonBackUp
         private void btnThemNV_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void NhanVien_Load(object sender, EventArgs e)
+        {
+            dgvNhanVien.DataSource = dta.ReadData("select * from tnhanvien");
         }
     }
 }
