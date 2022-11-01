@@ -62,6 +62,17 @@
     <Compile Include="BanAn.Designer.cs">
       <DependentUpon>BanAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="BTLLTTQDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLLTTQDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLLTTQDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLLTTQDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectData.cs" />
     <Compile Include="DonHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +195,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="BTLLTTQDataSet.xsc">
+      <DependentUpon>BTLLTTQDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTLLTTQDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLLTTQDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLLTTQDataSet.xss">
+      <DependentUpon>BTLLTTQDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTLLTTQDataSet1.xsc">
+      <DependentUpon>BTLLTTQDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BTLLTTQDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLLTTQDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLLTTQDataSet1.xss">
+      <DependentUpon>BTLLTTQDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Markup;
 
 namespace GiaoDienBaiTapLonBackUp
 {
     public partial class KhachHang : Form
     {
+        Classes.ConnectData data = new Classes.ConnectData();
         public KhachHang()
         {
             InitializeComponent();
@@ -38,7 +40,23 @@ namespace GiaoDienBaiTapLonBackUp
                 txtTimKiemKH.ForeColor = SystemColors.WindowText;
             }
         }
+        private void KhachHang_Load(object sender, EventArgs e)
+        {
+            this.khachHangTableAdapter.Fill(this.bTLLTTQDataSet1.KhachHang);
+            LoadData();
+            dgvKhachHang.Columns[0].HeaderText = "Mã Khách Hàng";
+            dgvKhachHang.Columns[1].HeaderText = "Tên Khách Hàng";
+            dgvKhachHang.Columns[2].HeaderText = "Số Điện Thoại";
 
 
+
+        }
+        void LoadData()
+        {
+            DataTable dtKhachHang = data.ReadData("select * from KhachHang");
+            dgvKhachHang.DataSource = dtKhachHang;
+        }
+
+       
     }
 }

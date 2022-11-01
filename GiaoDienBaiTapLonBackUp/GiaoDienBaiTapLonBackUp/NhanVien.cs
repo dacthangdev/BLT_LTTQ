@@ -12,6 +12,7 @@ namespace GiaoDienBaiTapLonBackUp
 {
     public partial class NhanVien : Form
     {
+        Classes.ConnectData data = new Classes.ConnectData();
         public NhanVien()
         {
             InitializeComponent();
@@ -39,5 +40,24 @@ namespace GiaoDienBaiTapLonBackUp
                 txtTimKiemNV.ForeColor = SystemColors.WindowText;
             }
         }
+        private void NhanVien_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'bTLLTTQDataSet.NhanVien' table. You can move, or remove it, as needed.
+            this.nhanVienTableAdapter.Fill(this.bTLLTTQDataSet.NhanVien);
+            LoadData();
+            dgvNhanVien.Columns[0].HeaderText = "Mã Nhân Viên";
+            dgvNhanVien.Columns[1].HeaderText = "Tên Nhân Viên";
+            dgvNhanVien.Columns[2].HeaderText = "Ngày Sinh";
+            dgvNhanVien.Columns[3].HeaderText = "Chức Vụ";
+            dgvNhanVien.Columns[4].HeaderText = "Trạng Thái";
+
+        }
+        void LoadData()
+        {
+            DataTable dtNhanVien = data.ReadData("select * from NhanVien");
+            dgvNhanVien.DataSource = dtNhanVien;
+        }
+
+        
     }
 }
