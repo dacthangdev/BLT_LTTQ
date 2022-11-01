@@ -31,11 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.iconbtnBanAn = new FontAwesome.Sharp.IconButton();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnNuoc = new System.Windows.Forms.Button();
-            this.btnTrangMieng = new System.Windows.Forms.Button();
-            this.btnMonChinh = new System.Windows.Forms.Button();
-            this.btnKhaiVi = new System.Windows.Forms.Button();
             this.iconbtnMenu = new FontAwesome.Sharp.IconButton();
             this.panelMediaMenu = new System.Windows.Forms.Panel();
             this.btnDonHang = new System.Windows.Forms.Button();
@@ -49,7 +44,6 @@
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
-            this.panelMenu.SuspendLayout();
             this.panelMediaMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,7 +56,6 @@
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(126)))), ((int)(((byte)(63)))));
             this.panelSideMenu.Controls.Add(this.iconbtnBanAn);
-            this.panelSideMenu.Controls.Add(this.panelMenu);
             this.panelSideMenu.Controls.Add(this.iconbtnMenu);
             this.panelSideMenu.Controls.Add(this.panelMediaMenu);
             this.panelSideMenu.Controls.Add(this.iconbtnQuanLy);
@@ -84,7 +77,7 @@
             this.iconbtnBanAn.IconColor = System.Drawing.Color.LightGray;
             this.iconbtnBanAn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconbtnBanAn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconbtnBanAn.Location = new System.Drawing.Point(0, 482);
+            this.iconbtnBanAn.Location = new System.Drawing.Point(0, 322);
             this.iconbtnBanAn.Name = "iconbtnBanAn";
             this.iconbtnBanAn.Size = new System.Drawing.Size(200, 50);
             this.iconbtnBanAn.TabIndex = 6;
@@ -93,91 +86,6 @@
             this.iconbtnBanAn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconbtnBanAn.UseVisualStyleBackColor = true;
             this.iconbtnBanAn.Click += new System.EventHandler(this.iconbtnBanAn_Click);
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(126)))), ((int)(((byte)(63)))));
-            this.panelMenu.Controls.Add(this.btnNuoc);
-            this.panelMenu.Controls.Add(this.btnTrangMieng);
-            this.panelMenu.Controls.Add(this.btnMonChinh);
-            this.panelMenu.Controls.Add(this.btnKhaiVi);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenu.Location = new System.Drawing.Point(0, 322);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 160);
-            this.panelMenu.TabIndex = 5;
-            // 
-            // btnNuoc
-            // 
-            this.btnNuoc.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnNuoc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNuoc.FlatAppearance.BorderSize = 0;
-            this.btnNuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuoc.ForeColor = System.Drawing.Color.White;
-            this.btnNuoc.Location = new System.Drawing.Point(0, 120);
-            this.btnNuoc.Name = "btnNuoc";
-            this.btnNuoc.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnNuoc.Size = new System.Drawing.Size(200, 40);
-            this.btnNuoc.TabIndex = 3;
-            this.btnNuoc.Text = "Nước uống";
-            this.btnNuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuoc.UseVisualStyleBackColor = false;
-            this.btnNuoc.Click += new System.EventHandler(this.btnNuoc_Click);
-            // 
-            // btnTrangMieng
-            // 
-            this.btnTrangMieng.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnTrangMieng.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTrangMieng.FlatAppearance.BorderSize = 0;
-            this.btnTrangMieng.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrangMieng.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrangMieng.ForeColor = System.Drawing.Color.White;
-            this.btnTrangMieng.Location = new System.Drawing.Point(0, 80);
-            this.btnTrangMieng.Name = "btnTrangMieng";
-            this.btnTrangMieng.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnTrangMieng.Size = new System.Drawing.Size(200, 40);
-            this.btnTrangMieng.TabIndex = 2;
-            this.btnTrangMieng.Text = "Tráng miệng\r\n";
-            this.btnTrangMieng.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangMieng.UseVisualStyleBackColor = false;
-            this.btnTrangMieng.Click += new System.EventHandler(this.btnTrangMieng_Click);
-            // 
-            // btnMonChinh
-            // 
-            this.btnMonChinh.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnMonChinh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMonChinh.FlatAppearance.BorderSize = 0;
-            this.btnMonChinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMonChinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMonChinh.ForeColor = System.Drawing.Color.White;
-            this.btnMonChinh.Location = new System.Drawing.Point(0, 40);
-            this.btnMonChinh.Name = "btnMonChinh";
-            this.btnMonChinh.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnMonChinh.Size = new System.Drawing.Size(200, 40);
-            this.btnMonChinh.TabIndex = 1;
-            this.btnMonChinh.Text = "Món chính\r\n";
-            this.btnMonChinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMonChinh.UseVisualStyleBackColor = false;
-            this.btnMonChinh.Click += new System.EventHandler(this.btnMonChinh_Click);
-            // 
-            // btnKhaiVi
-            // 
-            this.btnKhaiVi.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnKhaiVi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKhaiVi.FlatAppearance.BorderSize = 0;
-            this.btnKhaiVi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhaiVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhaiVi.ForeColor = System.Drawing.Color.White;
-            this.btnKhaiVi.Location = new System.Drawing.Point(0, 0);
-            this.btnKhaiVi.Name = "btnKhaiVi";
-            this.btnKhaiVi.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnKhaiVi.Size = new System.Drawing.Size(200, 40);
-            this.btnKhaiVi.TabIndex = 0;
-            this.btnKhaiVi.Text = "Khai vị";
-            this.btnKhaiVi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhaiVi.UseVisualStyleBackColor = false;
-            this.btnKhaiVi.Click += new System.EventHandler(this.btnKhaiVi_Click);
             // 
             // iconbtnMenu
             // 
@@ -374,8 +282,9 @@
             this.Controls.Add(this.panelSideMenu);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
-            this.panelMenu.ResumeLayout(false);
             this.panelMediaMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -396,16 +305,11 @@
         private System.Windows.Forms.Button btnDonHang;
         private System.Windows.Forms.Button btnKhachHang;
         private System.Windows.Forms.Button btnNhanVien;
-        private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Button btnTrangMieng;
-        private System.Windows.Forms.Button btnMonChinh;
-        private System.Windows.Forms.Button btnKhaiVi;
         private FontAwesome.Sharp.IconButton iconbtnMenu;
         private System.Windows.Forms.Panel panelChildForm;
         private FontAwesome.Sharp.IconButton iconbtnBanAn;
         private FontAwesome.Sharp.IconButton iconbtnHome;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnNuoc;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

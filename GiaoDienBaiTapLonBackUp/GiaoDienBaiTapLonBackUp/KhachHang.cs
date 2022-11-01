@@ -12,6 +12,7 @@ namespace GiaoDienBaiTapLonBackUp
 {
     public partial class KhachHang : Form
     {
+        Classes.ConnectData dta = new Classes.ConnectData();
         public KhachHang()
         {
             InitializeComponent();
@@ -39,6 +40,14 @@ namespace GiaoDienBaiTapLonBackUp
             }
         }
 
+        private void btnThemNV_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void KhachHang_Load(object sender, EventArgs e)
+        {
+            dgvKhachHang.DataSource = dta.ReadData("Select * from tkhachhang");
+        }
     }
 }

@@ -32,27 +32,16 @@
             this.btnBanHang = new System.Windows.Forms.Button();
             this.txtTimKiemDH = new System.Windows.Forms.TextBox();
             this.panelTrangThai = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnTrangTiep = new System.Windows.Forms.Button();
-            this.btnTrangCuoi = new System.Windows.Forms.Button();
-            this.btnTrangDau = new System.Windows.Forms.Button();
-            this.btnTrangTruoc = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dgvHoaDon = new System.Windows.Forms.DataGridView();
             this.panelTimKiemKH.SuspendLayout();
             this.panelTrangThai.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTimKiemKH
@@ -63,7 +52,7 @@
             this.panelTimKiemKH.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTimKiemKH.Location = new System.Drawing.Point(0, 0);
             this.panelTimKiemKH.Name = "panelTimKiemKH";
-            this.panelTimKiemKH.Size = new System.Drawing.Size(754, 67);
+            this.panelTimKiemKH.Size = new System.Drawing.Size(754, 73);
             this.panelTimKiemKH.TabIndex = 3;
             // 
             // btnBanHang
@@ -73,18 +62,18 @@
             this.btnBanHang.FlatAppearance.BorderSize = 0;
             this.btnBanHang.ForeColor = System.Drawing.Color.White;
             this.btnBanHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBanHang.Location = new System.Drawing.Point(616, 9);
+            this.btnBanHang.Location = new System.Drawing.Point(616, 12);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.Size = new System.Drawing.Size(132, 44);
             this.btnBanHang.TabIndex = 1;
-            this.btnBanHang.Text = "Tìm kiếm";
+            this.btnBanHang.Text = "Bán hàng";
             this.btnBanHang.UseVisualStyleBackColor = false;
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
             // txtTimKiemDH
             // 
             this.txtTimKiemDH.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTimKiemDH.Location = new System.Drawing.Point(35, 20);
+            this.txtTimKiemDH.Location = new System.Drawing.Point(37, 12);
             this.txtTimKiemDH.Name = "txtTimKiemDH";
             this.txtTimKiemDH.Size = new System.Drawing.Size(573, 22);
             this.txtTimKiemDH.TabIndex = 0;
@@ -94,24 +83,13 @@
             // panelTrangThai
             // 
             this.panelTrangThai.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelTrangThai.Controls.Add(this.label2);
             this.panelTrangThai.Controls.Add(this.label1);
             this.panelTrangThai.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTrangThai.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelTrangThai.Location = new System.Drawing.Point(0, 67);
+            this.panelTrangThai.Location = new System.Drawing.Point(0, 73);
             this.panelTrangThai.Name = "panelTrangThai";
-            this.panelTrangThai.Size = new System.Drawing.Size(754, 48);
+            this.panelTrangThai.Size = new System.Drawing.Size(754, 54);
             this.panelTrangThai.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(137, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "(30 ngày gần nhất)";
             // 
             // label1
             // 
@@ -129,14 +107,8 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.btnTrangTiep);
-            this.panel1.Controls.Add(this.btnTrangCuoi);
-            this.panel1.Controls.Add(this.btnTrangDau);
-            this.panel1.Controls.Add(this.btnTrangTruoc);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 398);
             this.panel1.Name = "panel1";
@@ -153,26 +125,6 @@
             this.label6.Size = new System.Drawing.Size(106, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "Tổng số đơn:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(527, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(43, 24);
-            this.comboBox1.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(358, 17);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 16);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Số dòng trên 1 trang:";
             // 
             // label4
             // 
@@ -198,115 +150,38 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "/";
             // 
-            // btnTrangTiep
+            // dgvHoaDon
             // 
-            this.btnTrangTiep.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangTiep.Location = new System.Drawing.Point(665, 13);
-            this.btnTrangTiep.Name = "btnTrangTiep";
-            this.btnTrangTiep.Size = new System.Drawing.Size(30, 30);
-            this.btnTrangTiep.TabIndex = 3;
-            this.btnTrangTiep.Text = ">";
-            this.btnTrangTiep.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangCuoi
-            // 
-            this.btnTrangCuoi.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangCuoi.Location = new System.Drawing.Point(699, 13);
-            this.btnTrangCuoi.Name = "btnTrangCuoi";
-            this.btnTrangCuoi.Size = new System.Drawing.Size(40, 30);
-            this.btnTrangCuoi.TabIndex = 2;
-            this.btnTrangCuoi.Text = ">|";
-            this.btnTrangCuoi.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangDau
-            // 
-            this.btnTrangDau.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangDau.Location = new System.Drawing.Point(586, 13);
-            this.btnTrangDau.Name = "btnTrangDau";
-            this.btnTrangDau.Size = new System.Drawing.Size(40, 30);
-            this.btnTrangDau.TabIndex = 1;
-            this.btnTrangDau.Text = "|<";
-            this.btnTrangDau.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangTruoc
-            // 
-            this.btnTrangTruoc.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangTruoc.Location = new System.Drawing.Point(629, 13);
-            this.btnTrangTruoc.Name = "btnTrangTruoc";
-            this.btnTrangTruoc.Size = new System.Drawing.Size(30, 30);
-            this.btnTrangTruoc.TabIndex = 0;
-            this.btnTrangTruoc.Text = "<";
-            this.btnTrangTruoc.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 115);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(754, 283);
-            this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 340);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(754, 58);
-            this.panel2.TabIndex = 7;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(205, 17);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 35);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Xóa Đơn";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(35, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thêm Đơn";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvHoaDon.Location = new System.Drawing.Point(0, 127);
+            this.dgvHoaDon.Name = "dgvHoaDon";
+            this.dgvHoaDon.RowHeadersWidth = 51;
+            this.dgvHoaDon.RowTemplate.Height = 24;
+            this.dgvHoaDon.Size = new System.Drawing.Size(754, 271);
+            this.dgvHoaDon.TabIndex = 6;
             // 
             // DonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(754, 455);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvHoaDon);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTrangThai);
             this.Controls.Add(this.panelTimKiemKH);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DonHang";
             this.Text = "DonHang";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.DonHang_Load);
             this.panelTimKiemKH.ResumeLayout(false);
             this.panelTimKiemKH.PerformLayout();
             this.panelTrangThai.ResumeLayout(false);
             this.panelTrangThai.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -317,21 +192,11 @@
         private System.Windows.Forms.Button btnBanHang;
         private System.Windows.Forms.TextBox txtTimKiemDH;
         private System.Windows.Forms.Panel panelTrangThai;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnTrangTiep;
-        private System.Windows.Forms.Button btnTrangCuoi;
-        private System.Windows.Forms.Button btnTrangDau;
-        private System.Windows.Forms.Button btnTrangTruoc;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvHoaDon;
     }
 }

@@ -33,10 +33,6 @@
             this.txtTimKiemNV = new System.Windows.Forms.TextBox();
             this.panelNhanVien = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnTrangTiep = new System.Windows.Forms.Button();
-            this.btnTrangCuoi = new System.Windows.Forms.Button();
-            this.btnTrangDau = new System.Windows.Forms.Button();
-            this.btnTrangTruoc = new System.Windows.Forms.Button();
             this.panelTrangThai = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,10 +40,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.btnSuaNV = new System.Windows.Forms.Button();
+            this.btnXoaNV = new System.Windows.Forms.Button();
             this.panelTimKiemNV.SuspendLayout();
             this.panelNhanVien.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelTrangThai.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTimKiemNV
@@ -73,11 +73,12 @@
             this.btnThemNV.TabIndex = 1;
             this.btnThemNV.Text = "Thêm nhân viên";
             this.btnThemNV.UseVisualStyleBackColor = false;
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // txtTimKiemNV
             // 
             this.txtTimKiemNV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTimKiemNV.Location = new System.Drawing.Point(37, 12);
+            this.txtTimKiemNV.Location = new System.Drawing.Point(18, 12);
             this.txtTimKiemNV.Name = "txtTimKiemNV";
             this.txtTimKiemNV.Size = new System.Drawing.Size(573, 22);
             this.txtTimKiemNV.TabIndex = 0;
@@ -88,6 +89,7 @@
             // 
             this.panelNhanVien.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.panelNhanVien.BackColor = System.Drawing.Color.White;
+            this.panelNhanVien.Controls.Add(this.dgvNhanVien);
             this.panelNhanVien.Controls.Add(this.panel1);
             this.panelNhanVien.Controls.Add(this.panelTrangThai);
             this.panelNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -98,55 +100,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnTrangTiep);
-            this.panel1.Controls.Add(this.btnTrangCuoi);
-            this.panel1.Controls.Add(this.btnTrangDau);
-            this.panel1.Controls.Add(this.btnTrangTruoc);
+            this.panel1.Controls.Add(this.btnXoaNV);
+            this.panel1.Controls.Add(this.btnSuaNV);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 325);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(754, 57);
             this.panel1.TabIndex = 3;
-            // 
-            // btnTrangTiep
-            // 
-            this.btnTrangTiep.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangTiep.Location = new System.Drawing.Point(665, 13);
-            this.btnTrangTiep.Name = "btnTrangTiep";
-            this.btnTrangTiep.Size = new System.Drawing.Size(30, 30);
-            this.btnTrangTiep.TabIndex = 3;
-            this.btnTrangTiep.Text = ">";
-            this.btnTrangTiep.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangCuoi
-            // 
-            this.btnTrangCuoi.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangCuoi.Location = new System.Drawing.Point(699, 13);
-            this.btnTrangCuoi.Name = "btnTrangCuoi";
-            this.btnTrangCuoi.Size = new System.Drawing.Size(40, 30);
-            this.btnTrangCuoi.TabIndex = 2;
-            this.btnTrangCuoi.Text = ">|";
-            this.btnTrangCuoi.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangDau
-            // 
-            this.btnTrangDau.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangDau.Location = new System.Drawing.Point(586, 13);
-            this.btnTrangDau.Name = "btnTrangDau";
-            this.btnTrangDau.Size = new System.Drawing.Size(40, 30);
-            this.btnTrangDau.TabIndex = 1;
-            this.btnTrangDau.Text = "|<";
-            this.btnTrangDau.UseVisualStyleBackColor = true;
-            // 
-            // btnTrangTruoc
-            // 
-            this.btnTrangTruoc.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTrangTruoc.Location = new System.Drawing.Point(629, 13);
-            this.btnTrangTruoc.Name = "btnTrangTruoc";
-            this.btnTrangTruoc.Size = new System.Drawing.Size(30, 30);
-            this.btnTrangTruoc.TabIndex = 0;
-            this.btnTrangTruoc.Text = "<";
-            this.btnTrangTruoc.UseVisualStyleBackColor = true;
             // 
             // panelTrangThai
             // 
@@ -229,6 +189,45 @@
             this.label1.Text = "Nhân Viên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // dgvNhanVien
+            // 
+            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvNhanVien.Location = new System.Drawing.Point(0, 54);
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.RowHeadersWidth = 51;
+            this.dgvNhanVien.RowTemplate.Height = 24;
+            this.dgvNhanVien.Size = new System.Drawing.Size(754, 271);
+            this.dgvNhanVien.TabIndex = 4;
+            // 
+            // btnSuaNV
+            // 
+            this.btnSuaNV.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnSuaNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(126)))), ((int)(((byte)(63)))));
+            this.btnSuaNV.FlatAppearance.BorderSize = 0;
+            this.btnSuaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuaNV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSuaNV.Location = new System.Drawing.Point(446, 6);
+            this.btnSuaNV.Name = "btnSuaNV";
+            this.btnSuaNV.Size = new System.Drawing.Size(145, 44);
+            this.btnSuaNV.TabIndex = 2;
+            this.btnSuaNV.Text = "Sửa thông tin";
+            this.btnSuaNV.UseVisualStyleBackColor = false;
+            // 
+            // btnXoaNV
+            // 
+            this.btnXoaNV.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnXoaNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(126)))), ((int)(((byte)(63)))));
+            this.btnXoaNV.FlatAppearance.BorderSize = 0;
+            this.btnXoaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoaNV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnXoaNV.Location = new System.Drawing.Point(597, 6);
+            this.btnXoaNV.Name = "btnXoaNV";
+            this.btnXoaNV.Size = new System.Drawing.Size(145, 44);
+            this.btnXoaNV.TabIndex = 2;
+            this.btnXoaNV.Text = "Xóa nhân viên";
+            this.btnXoaNV.UseVisualStyleBackColor = false;
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -239,12 +238,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NhanVien";
             this.Text = "NhanVien";
+            this.Load += new System.EventHandler(this.NhanVien_Load);
             this.panelTimKiemNV.ResumeLayout(false);
             this.panelTimKiemNV.PerformLayout();
             this.panelNhanVien.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panelTrangThai.ResumeLayout(false);
             this.panelTrangThai.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -263,9 +264,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnTrangTiep;
-        private System.Windows.Forms.Button btnTrangCuoi;
-        private System.Windows.Forms.Button btnTrangDau;
-        private System.Windows.Forms.Button btnTrangTruoc;
+        private System.Windows.Forms.DataGridView dgvNhanVien;
+        private System.Windows.Forms.Button btnXoaNV;
+        private System.Windows.Forms.Button btnSuaNV;
     }
 }
