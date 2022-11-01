@@ -24,3 +24,31 @@ D:\kì 5\lập trình trực quan\Bài Tập Lớn\GiaoDienBaiTapLonBackUp\GiaoD
 D:\kì 5\lập trình trực quan\Bài Tập Lớn\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.NuocUong.resources
 D:\kì 5\lập trình trực quan\Bài Tập Lớn\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.LayMonAnTuBanAn.resources
 D:\kì 5\lập trình trực quan\Bài Tập Lớn\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Login.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\GiaoDienBaiTapLonBackUp.exe.config
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\GiaoDienBaiTapLonBackUp.exe
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\GiaoDienBaiTapLonBackUp.pdb
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\FontAwesome.Sharp.dll
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\FontAwesome.Sharp.Pro.dll
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.AssemblyReference.cache
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.SuggestedBindingRedirects.cache
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.BanAn.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.DonHang.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Form1.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.FormMonAn.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Home.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.KhachHang.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.LayMonAnTuBanAn.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Login.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.MonChinh.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.MonKhaiVi.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.MonTrangMieng.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.NhanVien.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.NuocUong.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Properties.Resources.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.GenerateResource.cache
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.CoreCompileInputs.cache
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.CopyComplete
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.exe
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.pdb
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Themdonhang.resources
+E:\c#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.ThanhToan.resources

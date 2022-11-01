@@ -31,7 +31,6 @@
             this.panelOder = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconbtnThanhToan = new FontAwesome.Sharp.IconButton();
-            this.iconbtnChiTiet = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.panelBanTang = new System.Windows.Forms.Panel();
             this.iconbtnMinus = new FontAwesome.Sharp.IconButton();
@@ -76,7 +75,6 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(126)))), ((int)(((byte)(63)))));
             this.panel3.Controls.Add(this.iconbtnThanhToan);
-            this.panel3.Controls.Add(this.iconbtnChiTiet);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 481);
@@ -96,7 +94,7 @@
             this.iconbtnThanhToan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconbtnThanhToan.IconSize = 20;
             this.iconbtnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconbtnThanhToan.Location = new System.Drawing.Point(260, 0);
+            this.iconbtnThanhToan.Location = new System.Drawing.Point(325, 0);
             this.iconbtnThanhToan.Name = "iconbtnThanhToan";
             this.iconbtnThanhToan.Size = new System.Drawing.Size(90, 65);
             this.iconbtnThanhToan.TabIndex = 2;
@@ -104,26 +102,6 @@
             this.iconbtnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconbtnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconbtnThanhToan.UseVisualStyleBackColor = false;
-            // 
-            // iconbtnChiTiet
-            // 
-            this.iconbtnChiTiet.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.iconbtnChiTiet.Dock = System.Windows.Forms.DockStyle.Right;
-            this.iconbtnChiTiet.FlatAppearance.BorderSize = 0;
-            this.iconbtnChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconbtnChiTiet.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            this.iconbtnChiTiet.IconColor = System.Drawing.Color.Black;
-            this.iconbtnChiTiet.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconbtnChiTiet.IconSize = 16;
-            this.iconbtnChiTiet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconbtnChiTiet.Location = new System.Drawing.Point(350, 0);
-            this.iconbtnChiTiet.Name = "iconbtnChiTiet";
-            this.iconbtnChiTiet.Size = new System.Drawing.Size(65, 65);
-            this.iconbtnChiTiet.TabIndex = 1;
-            this.iconbtnChiTiet.Text = "Chi tiết";
-            this.iconbtnChiTiet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconbtnChiTiet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconbtnChiTiet.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -444,7 +422,6 @@
         private System.Windows.Forms.Button btnMangVe;
         private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton iconbtnThanhToan;
-        private FontAwesome.Sharp.IconButton iconbtnChiTiet;
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton iconbtnMinus;
         private FontAwesome.Sharp.IconButton iconbtnPlus;
