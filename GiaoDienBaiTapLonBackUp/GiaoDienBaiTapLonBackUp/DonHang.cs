@@ -47,7 +47,13 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void DonHang_Load(object sender, EventArgs e)
         {
-            dgvHoaDon.DataSource = dta.ReadData("Select * from thoadon");
+            
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Themdonhang lb = new Themdonhang();
+            lb.ShowDialog();
         }
     }
 }

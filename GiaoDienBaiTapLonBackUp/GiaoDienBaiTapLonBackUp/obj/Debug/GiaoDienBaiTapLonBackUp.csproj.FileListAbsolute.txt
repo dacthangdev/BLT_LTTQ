@@ -77,3 +77,6 @@ D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\bin\Debug\System.Threading.AccessControl.xml
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Components.Widget.resources
 D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.csproj.Fody.CopyLocal.cache
+D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.ThanhToan.resources
+D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.ThemKhachHang.resources
+D:\BTLALL\C#\BLT_LTTQ\GiaoDienBaiTapLonBackUp\GiaoDienBaiTapLonBackUp\obj\Debug\GiaoDienBaiTapLonBackUp.Themdonhang.resources

@@ -285,6 +285,24 @@
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.Designer.cs">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themdonhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themdonhang.Designer.cs">
+      <DependentUpon>Themdonhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKhachHang.Designer.cs">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BanAn.resx">
       <DependentUpon>BanAn.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +352,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ThanhToan.resx">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themdonhang.resx">
+      <DependentUpon>Themdonhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKhachHang.resx">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="bin\Debug\GiaoDienBaiTapLonBackUp.exe.config" />
     <None Include="obj\Debug\build.force" />
     <None Include="obj\Debug\Costura\038539203A1EAB74E1AFC9097A6F49D74DEAAECD.costura.system.servicemodel.duplex.dll.compressed" />

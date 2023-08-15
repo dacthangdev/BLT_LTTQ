@@ -20,6 +20,21 @@ namespace GiaoDienBaiTapLonBackUp
             InitializeComponent();
         }
 
+        private Form activeForm = null;
+        private void openchildFormThanhToan(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelOder.Controls.Add(childForm);
+            panelOder.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void grbSoLuongBan_Enter(object sender, EventArgs e)
         {
             
@@ -181,5 +196,9 @@ namespace GiaoDienBaiTapLonBackUp
 
         }
 
+        private void iconbtnThanhToan_Click(object sender, EventArgs e)
+        {
+            openchildFormThanhToan(new ThanhToan());
+        }
     }
 }

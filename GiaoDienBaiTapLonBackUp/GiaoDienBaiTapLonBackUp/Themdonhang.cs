@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,8 +25,8 @@ namespace GiaoDienBaiTapLonBackUp
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-         //   panelChildForm.Controls.Add(childForm);
-           // panelChildForm.Tag = childForm;
+            //   panelChildForm.Controls.Add(childForm);
+            // panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }

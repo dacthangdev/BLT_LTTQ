@@ -15,6 +15,9 @@ namespace GiaoDienBaiTapLonBackUp
         public ThanhToan()
         {
             InitializeComponent();
+            comboBox1.Items.Add("Chuyển khoản");
+            comboBox1.Items.Add("Quẹt thẻ");
+            comboBox1.Items.Add("Tiền mặt");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -35,10 +38,7 @@ namespace GiaoDienBaiTapLonBackUp
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBox1.Items.Add("Chuyển khoản");
-            comboBox1.Items.Add("Quẹt thẻ");
-            comboBox1.Items.Add("Tiền mặt");
-            
+           
         }
     }
 }

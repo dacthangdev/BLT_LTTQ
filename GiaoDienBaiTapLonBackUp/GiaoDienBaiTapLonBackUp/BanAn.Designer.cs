@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelOder = new System.Windows.Forms.Panel();
+            this.dtgChiTietHoaDon = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconbtnThanhToan = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,13 +52,12 @@
             this.btnTang3 = new System.Windows.Forms.Button();
             this.btnTang2 = new System.Windows.Forms.Button();
             this.btnTang1 = new System.Windows.Forms.Button();
-            this.dtgChiTietHoaDon = new System.Windows.Forms.DataGridView();
             this.panelOder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgChiTietHoaDon)).BeginInit();
             this.panel3.SuspendLayout();
             this.panelBanTang.SuspendLayout();
             this.grbSoLuongBan.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgChiTietHoaDon)).BeginInit();
             this.SuspendLayout();
             // 
             // panelOder
@@ -70,6 +70,17 @@
             this.panelOder.Name = "panelOder";
             this.panelOder.Size = new System.Drawing.Size(415, 546);
             this.panelOder.TabIndex = 0;
+            // 
+            // dtgChiTietHoaDon
+            // 
+            this.dtgChiTietHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgChiTietHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgChiTietHoaDon.Location = new System.Drawing.Point(0, 52);
+            this.dtgChiTietHoaDon.Name = "dtgChiTietHoaDon";
+            this.dtgChiTietHoaDon.RowHeadersWidth = 51;
+            this.dtgChiTietHoaDon.RowTemplate.Height = 24;
+            this.dtgChiTietHoaDon.Size = new System.Drawing.Size(415, 429);
+            this.dtgChiTietHoaDon.TabIndex = 5;
             // 
             // panel3
             // 
@@ -102,6 +113,7 @@
             this.iconbtnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconbtnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconbtnThanhToan.UseVisualStyleBackColor = false;
+            this.iconbtnThanhToan.Click += new System.EventHandler(this.iconbtnThanhToan_Click);
             // 
             // label3
             // 
@@ -358,17 +370,6 @@
             this.btnTang1.UseVisualStyleBackColor = true;
             this.btnTang1.Click += new System.EventHandler(this.btnTang1_Click);
             // 
-            // dtgChiTietHoaDon
-            // 
-            this.dtgChiTietHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgChiTietHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgChiTietHoaDon.Location = new System.Drawing.Point(0, 52);
-            this.dtgChiTietHoaDon.Name = "dtgChiTietHoaDon";
-            this.dtgChiTietHoaDon.RowHeadersWidth = 51;
-            this.dtgChiTietHoaDon.RowTemplate.Height = 24;
-            this.dtgChiTietHoaDon.Size = new System.Drawing.Size(415, 429);
-            this.dtgChiTietHoaDon.TabIndex = 5;
-            // 
             // BanAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -381,13 +382,13 @@
             this.Text = "BanAn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelOder.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgChiTietHoaDon)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panelBanTang.ResumeLayout(false);
             this.panelBanTang.PerformLayout();
             this.grbSoLuongBan.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgChiTietHoaDon)).EndInit();
             this.ResumeLayout(false);
 
         }

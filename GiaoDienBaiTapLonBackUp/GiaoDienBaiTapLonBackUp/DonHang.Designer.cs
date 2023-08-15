@@ -1,4 +1,4 @@
-﻿namespace GiaoDienBaiTapLonBackUp
+﻿﻿namespace GiaoDienBaiTapLonBackUp
 {
     partial class DonHang
     {
@@ -32,16 +32,21 @@
             this.btnBanHang = new System.Windows.Forms.Button();
             this.txtTimKiemDH = new System.Windows.Forms.TextBox();
             this.panelTrangThai = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dgvHoaDon = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.panelTimKiemKH.SuspendLayout();
             this.panelTrangThai.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTimKiemKH
@@ -52,7 +57,7 @@
             this.panelTimKiemKH.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTimKiemKH.Location = new System.Drawing.Point(0, 0);
             this.panelTimKiemKH.Name = "panelTimKiemKH";
-            this.panelTimKiemKH.Size = new System.Drawing.Size(754, 73);
+            this.panelTimKiemKH.Size = new System.Drawing.Size(754, 67);
             this.panelTimKiemKH.TabIndex = 3;
             // 
             // btnBanHang
@@ -62,18 +67,18 @@
             this.btnBanHang.FlatAppearance.BorderSize = 0;
             this.btnBanHang.ForeColor = System.Drawing.Color.White;
             this.btnBanHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBanHang.Location = new System.Drawing.Point(616, 12);
+            this.btnBanHang.Location = new System.Drawing.Point(616, 9);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.Size = new System.Drawing.Size(132, 44);
             this.btnBanHang.TabIndex = 1;
-            this.btnBanHang.Text = "Bán hàng";
+            this.btnBanHang.Text = "Tìm kiếm";
             this.btnBanHang.UseVisualStyleBackColor = false;
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
             // txtTimKiemDH
             // 
             this.txtTimKiemDH.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTimKiemDH.Location = new System.Drawing.Point(37, 12);
+            this.txtTimKiemDH.Location = new System.Drawing.Point(35, 20);
             this.txtTimKiemDH.Name = "txtTimKiemDH";
             this.txtTimKiemDH.Size = new System.Drawing.Size(573, 22);
             this.txtTimKiemDH.TabIndex = 0;
@@ -83,13 +88,24 @@
             // panelTrangThai
             // 
             this.panelTrangThai.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelTrangThai.Controls.Add(this.label2);
             this.panelTrangThai.Controls.Add(this.label1);
             this.panelTrangThai.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTrangThai.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelTrangThai.Location = new System.Drawing.Point(0, 73);
+            this.panelTrangThai.Location = new System.Drawing.Point(0, 67);
             this.panelTrangThai.Name = "panelTrangThai";
-            this.panelTrangThai.Size = new System.Drawing.Size(754, 54);
+            this.panelTrangThai.Size = new System.Drawing.Size(754, 48);
             this.panelTrangThai.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(137, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "(30 ngày gần nhất)";
             // 
             // label1
             // 
@@ -150,38 +166,74 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "/";
             // 
-            // dgvHoaDon
+            // dataGridView1
             // 
-            this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHoaDon.Location = new System.Drawing.Point(0, 127);
-            this.dgvHoaDon.Name = "dgvHoaDon";
-            this.dgvHoaDon.RowHeadersWidth = 51;
-            this.dgvHoaDon.RowTemplate.Height = 24;
-            this.dgvHoaDon.Size = new System.Drawing.Size(754, 271);
-            this.dgvHoaDon.TabIndex = 6;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 115);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(754, 283);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnThem);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 340);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(754, 58);
+            this.panel2.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(205, 17);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(115, 35);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Xóa Đơn";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Location = new System.Drawing.Point(35, 17);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(115, 35);
+            this.btnThem.TabIndex = 0;
+            this.btnThem.Text = "Thêm Đơn";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // DonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(754, 455);
-            this.Controls.Add(this.dgvHoaDon);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTrangThai);
             this.Controls.Add(this.panelTimKiemKH);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DonHang";
             this.Text = "DonHang";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.DonHang_Load);
             this.panelTimKiemKH.ResumeLayout(false);
             this.panelTimKiemKH.PerformLayout();
             this.panelTrangThai.ResumeLayout(false);
             this.panelTrangThai.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -192,11 +244,15 @@
         private System.Windows.Forms.Button btnBanHang;
         private System.Windows.Forms.TextBox txtTimKiemDH;
         private System.Windows.Forms.Panel panelTrangThai;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dgvHoaDon;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnThem;
     }
 }

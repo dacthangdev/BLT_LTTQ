@@ -1,4 +1,4 @@
-﻿namespace GiaoDienBaiTapLonBackUp
+﻿﻿namespace GiaoDienBaiTapLonBackUp
 {
     partial class Themdonhang
     {
@@ -238,6 +238,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Themdonhang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Themdonhang";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
